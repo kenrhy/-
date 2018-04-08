@@ -39,5 +39,28 @@
 内部排序，外部排序。（涉及的存储器）  
 内部排序的过程是一个逐步扩大记录的有序序列长度的过程。  
 ##### 选择排序
-R[1~i-1]有序，每次选取无序区最小的元素R[j]，与无序区的第一个元素R[i]交换。  
-时间复杂度O（n<sup>2</sup>）,不稳定排序。（交换的策略导致了不稳定，可以改为稳定）
+R[1~i-1]有序，每次选取无序区**最小**的元素R[j]，与无序区的第一个元素R[i]交换。  
+时间复杂度O（n<sup>2</sup>）,不稳定排序。（交换的策略导致了不稳定，可以改为稳定）  
+![选择排序](https://upload.wikimedia.org/wikipedia/commons/b/b0/Selection_sort_animation.gif)
+[维基百科-选择排序](https://zh.wikipedia.org/wiki/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F)   
+##### 插入排序
+将无序区的R[i]，插入到有序区R[1~i-1]中，使有序区长度+1。插入过程**从后往前**搜索并插入。（因此已有序时O(n)）  
+时间复杂度O（n<sup>2</sup>）,稳定排序。  
+![插入排序](https://upload.wikimedia.org/wikipedia/commons/2/25/Insertion_sort_animation.gif)   
+[维基百科-插入排序](https://zh.wikipedia.org/wiki/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F)  
+##### 冒泡排序
+将无序区的记录进行**相邻**记录的比较和交换，使得较小记录移动到一边，较大记录移动到另一边。  
+时间复杂度O（n<sup>2</sup>）,稳定排序。  
+![冒泡排序](https://upload.wikimedia.org/wikipedia/commons/3/37/Bubble_sort_animation.gif)   
+[维基百科-冒泡排序](https://zh.wikipedia.org/wiki/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F)  
+##### 快速排序
+通过一趟排序将待排记录分割成两个区域A、B，A<B，再将A、B进行排序。  
+时间复杂度O(nlogn)，但当序列有序时退化为冒泡排序O(n<sup>2</sup>)，不稳定排序。  
+##### 归并排序
+将两个位置相邻的有序子序列归并为一个有序序列。  
+时间复杂度O(nlogn)，空间复杂度O(n)，稳定排序。  
+![归并排序](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)   
+[维基百科-归并排序](https://zh.wikipedia.org/wiki/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F)  
+##### 堆排序
+近似完全二叉树，且满足堆的性质：子结点的键值总小于(大于)父结点。  
+时间复杂度O(nlogn)，空间复杂度O(1)，不稳定排序。  
