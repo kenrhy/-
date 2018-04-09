@@ -39,7 +39,7 @@
 内部排序，外部排序。（涉及的存储器）  
 内部排序的过程是一个逐步扩大记录的有序序列长度的过程。  
 ##### 选择排序
-R[1~i-1]有序，每次选取无序区**最小**的元素R[j]，与无序区的第一个元素R[i]交换。  
+R[1~i-1]有序，每次选取无序区**最小**的元素R[j]，与无序区的第一个元素R[i]交换。  
 时间复杂度O（n<sup>2</sup>）,不稳定排序。（交换的策略导致了不稳定，可以改为稳定）  
 ![选择排序](https://upload.wikimedia.org/wikipedia/commons/b/b0/Selection_sort_animation.gif)
 [维基百科-选择排序](https://zh.wikipedia.org/wiki/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F)   
