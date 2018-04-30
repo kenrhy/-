@@ -7,4 +7,5 @@ CREAT VIEW *viewname* AS *select语句* <br>
 ##### 全链接（FULL OUT JOIN）
 MySQL没有全链接函数，可以使用**union**+左右（left right）外连完成，需要考虑主键选择，多表需要多个主键的union。<br>
 ##### 杂项
-[Mysql高并发优化](https://www.cnblogs.com/wangchaozhi/p/5061378.html)
+[Mysql高并发优化](https://www.cnblogs.com/wangchaozhi/p/5061378.html)<br>
+[知乎：MySQL 学习路线是怎样的？有哪些学习资料或网站推荐？](https://www.zhihu.com/question/20931204)<br>
