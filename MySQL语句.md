@@ -6,6 +6,11 @@ CREAT VIEW *viewname* AS *select语句* <br>
 2.case搜索函数：CASE WHEN *colum-value满足1* THEN *result-value1* WHEN *colum-value满足2* THEN *result-value2* ELSE *result-value* END
 ##### 全链接（FULL OUT JOIN）
 MySQL没有全链接函数，可以使用**union**+左右（left right）外连完成，需要考虑主键选择，多表需要多个主键的union。<br>
+##### 执行sql脚本
+1.cmd命令行：mysql -h${HOSTNAME}  -P${PORT}  -u${USERNAME} -p${PASSWORD} ${DBNAME} <{sql脚本文件路径} >{输出文件路径}<br>
+例如：[zkpk@master mysqltest]$ mysql -u root -D test < fulljoin.sql >out <br>
+2.MySQL控制台：Mysql>source 【sql脚本文件的路径全名】 或 Mysql>\. 【sql脚本文件的路径全名】<br>
+例如：mysql> source /home/zkpk/mysqltest/fulljoin.sql <br>
 ##### 杂项
 [Mysql高并发优化](https://www.cnblogs.com/wangchaozhi/p/5061378.html)<br>
 [知乎：MySQL 学习路线是怎样的？有哪些学习资料或网站推荐？](https://www.zhihu.com/question/20931204)<br>
