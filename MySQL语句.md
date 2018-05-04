@@ -30,6 +30,7 @@ LOAD DATA [LOW_PRIORITY | CONCURRENT] [LOCAL] INFILE 'file_name' [REPLACE | IGNO
 方法1：命令into outfile<br>
 例如：mysql> select * from testv into outfile '/home/zkpk/mysqltest/out';<br>
 报错：ERROR 1 (HY000): Can't create/write to file '/data/test.xls' (Errcode: 13)<br>
+但是如果仅在当前目录下输出：select * from testv  into outfile **'out.csv'** FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n';则可以导出，如果没有在配置文件/etc/my.cnf文件中指定tmpdir，则导出到datadir中。
 方法2：pager cat > '/home/zkpk/mysqltest/out' 输出到指定文件。以表的形式overwrite输出。 nopager（\n）取消。<br>
 方法3：tee(\T) 可以指定输出文件，append形式输出命令和结果。notee（\t）取消。<br>
 ##### 杂项
