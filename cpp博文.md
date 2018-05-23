@@ -15,7 +15,7 @@ realloc：头文件stdlib.h/malloc.h。函数原型void* realloc (void* ptr, siz
 new：c++关键字。获得内存空间，调用构造函数，返回正确的指针。如果说简单变量，不调用构造函数。<br>
 
 
-单步调试 step into/step out/step over 区别
-step into: 单步执行，遇到子函数就进入并继续进行单步执行。<br>
-step over: 在单步执行时，将子函数整个作为一步。<br>
-step out: 在单步执行进入子函数内部时，用step out执行完子函数剩余部分，并返回上一层函数。<br>
+单步调试 step into/step out/step over 区别<br>
+step **into**: 单步执行，遇到子函数就进入并继续进行单步执行。<br>
+step **over**: 在单步执行时，将子函数整个作为一步。<br>
+step **out**: 在单步执行进入子函数内部时，用step out执行完子函数剩余部分，并返回上一层函数。<br>
